@@ -28,27 +28,24 @@ import {Leon, Lobo, Oso, Serpiente, Aguila} from "./animales.js";
       Container.style.width = "200px";
 
       img.setAttribute("src", `assets/imgs/${animal.Img}`);
-      img.classList.add("modal-div", "img-fluid", "cursor"); //agregando clases al modal
+      img.classList.add("img-fluid", "cursor"); //agregando clases al modal
       img.addEventListener("click", () => {
-        $("#modal").modal("show");
+        $("#modal").modal("toggle");
         console.log(animal);
         const modalBody = document.getElementById("modal-body");
         modalBody.innerHTML = `
-        <div class="modal-div">
-          <img src="./assets/imgs/${animal.Img}" style="width: 500px" class="img-fluid"/>
+        
+          <img src="./assets/imgs/${animal.Img}" style="width: 400px" class="img-modal"/>
         
         <center><strong>Animal: </strong>${animal.Nombre}</center>
         <center><strong>Edad: </strong>${animal.Edad}</center>
-        <center><strong>Comentarios: </strong>${animal.Comentarios}</center>
-        </div>`;
+        <center><strong>Comentarios: </strong>${animal.Comentarios}</center>`;
       });
 
       //evento sonidos
 
-      botonSonido.classList.add("card-body", "p-0");
+      botonSonido.classList.add("card-body", "card-boton", "p-0");
       botonSonido.innerHTML = `<img src="./assets/imgs/audio.svg" style="width: 30px"/>`;
-      botonSonido.style.height = "40px";
-      botonSonido.style.background = "#5f3906";
 
       botonSonido.addEventListener("click", () => {
         if (animal.Nombre === "Leon") {

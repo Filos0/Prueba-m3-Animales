@@ -53,6 +53,25 @@ body {
   cursor: pointer;
 }
 
-.modal-div {
-  background-color: rgb(204, 204, 204);
+.modal-content {
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 230, 0, 0.109);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  color: white;
+}
+
+.img-modal {
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 80%;
+  height: auto;
+}
+
+.card-boton {
+  height: 40px;
+  background-color: rgb(219, 180, 52);
 }
