@@ -61,7 +61,8 @@ body {
   background: rgba(255, 230, 0, 0.109);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(15px);
-  color: white;
+  color: rgb(238, 238, 238);
+  font-size: 1.2rem;
 }
 
 .img-modal {
